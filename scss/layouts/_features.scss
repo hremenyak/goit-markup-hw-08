@@ -1,0 +1,35 @@
+.features {
+  @extend %centeredFlex;
+
+  &__title {
+    margin-bottom: 10px;
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-weight: var(--primary-fw-title);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__text {
+    color: var(--primary-color);
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  &:nth-child(4) {
+    margin-bottom: 94px;
+  }
+
+  &__box {
+    @extend %centeredFlex;
+
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: rgba(245, 244, 250, 1);
+  }
+}

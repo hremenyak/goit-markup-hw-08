@@ -1,0 +1,42 @@
+.work {
+  display: flex;
+
+  &__item {
+    position: relative;
+    margin-right: 30px;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
+
+  &__text {
+    @extend %centeredFlex;
+    position: absolute;
+
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
+
+.cardset__title {
+  color: var(--title-color);
+  font-weight: var(--primary-fw-title);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.cardset__text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-color);
+}

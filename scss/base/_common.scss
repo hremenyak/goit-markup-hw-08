@@ -1,0 +1,31 @@
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--grey {
+    background-color: var(--bgc-our-team);
+  }
+
+  &--no-padding {
+    padding-top: 0px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    color: var(--title-color);
+    font-weight: var(--primary-fw-title);
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
