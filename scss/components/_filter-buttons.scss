@@ -2,8 +2,19 @@
   @extend %centeredFlex;
   margin-bottom: 50px;
 
+  &__item {
+    @media screen and (max-width: 480px) {
+      margin-bottom: 15px;
+    }
+  }
   &__item:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 25px;
   }
 }
 

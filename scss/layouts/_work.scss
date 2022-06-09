@@ -24,6 +24,21 @@
     color: var(--primary-white-color);
     background-color: rgba(47, 48, 58, 0.8);
   }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  &.cardset__title {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+  &.cardset__text {
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
 }
 
 .cardset__title {
@@ -39,4 +54,10 @@
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-color);
+}
+
+.section-title--none {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
