@@ -12,6 +12,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     text-align: initial;
+    align-items: baseline;
   }
 }
 
@@ -65,7 +66,7 @@
 }
 
 .footer-section__wrapper {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: flex;
     margin-bottom: 60px;
     align-items: baseline;

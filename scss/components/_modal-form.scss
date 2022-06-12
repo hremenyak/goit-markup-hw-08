@@ -1,18 +1,17 @@
-.modal-form-container {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  width: 448px;
-}
-
 .modal-title {
   display: block;
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: rgba(33, 33, 33, 1);
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+    text-align: initial;
+  }
 }
 
 .wrapper {
@@ -52,11 +51,6 @@
     margin: 0;
   }
 
-  &__policy {
-    @extend %centeredFlex;
-    margin-bottom: 30px;
-  }
-
   &__icon {
     position: absolute;
     top: 50%;
@@ -67,6 +61,20 @@
 
   &__link {
     color: var(--accent-color);
+    text-decoration: underline;
+  }
+}
+
+.modal-form__policy {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
   }
 }
 
@@ -87,6 +95,13 @@
 
 .policy__label {
   margin-left: 7px;
+  font-size: 12px;
+  line-height: 1.16;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__input:focus ~ .modal-form__icon {
