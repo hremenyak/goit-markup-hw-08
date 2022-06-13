@@ -1,8 +1,10 @@
 .clients {
-  @extend %centeredFlex;
   margin: -15px;
 
   @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
@@ -12,15 +14,15 @@
 
   &__item {
     margin: 15px;
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @include mq(mobile-only) {
       flex-basis: calc((100% - 4 * 15px) / 2);
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @include mq(tablet-only) {
       flex-basis: calc((100% - 6 * 15px) / 3);
     }
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desktop) {
       flex-basis: calc((100% - 12 * 15px) / 6);
     }
   }

@@ -6,7 +6,7 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
-  z-index: 1;
+  z-index: 2;
   @include mq(tablet) {
     display: none;
   }
@@ -50,9 +50,10 @@
   height: 796px;
   background-color: var(--primary-white-color);
 
-  padding: 48px 20px 40px;
+  padding: 48px 40px;
   text-align: start;
   font-size: 20px;
+  z-index: 1;
 
   &.is-open {
     display: flex;
@@ -127,5 +128,7 @@
 }
 
 .menu-socials {
-  display: flex;
+  @include mq(mobile) {
+    display: flex;
+  }
 }
