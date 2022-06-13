@@ -1,18 +1,20 @@
 .menu-button {
-  display: inline-flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   border: none;
   background-color: transparent;
   margin: 0;
   padding: 0;
   z-index: 1;
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     display: none;
   }
 }
 
 .menu-button__icon-close {
-  fill: var(--title-color);
   display: none;
+  fill: var(--title-color);
 
   .menu-button:hover &,
   .menu-button:focus & {
@@ -39,12 +41,12 @@
 
 .mobile-menu-container {
   display: none;
-  position: relative;
+  position: fixed;
   flex-direction: column;
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 100%;
+  width: 100vw;
   height: 796px;
   background-color: var(--primary-white-color);
 

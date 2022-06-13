@@ -1,14 +1,14 @@
 .footer-form {
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     display: flex;
   }
 }
 
 .footer-form__input {
-  @media screen and (min-width: 768px) {
+  @include mq(not-desktop) {
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     width: 358px;
     margin-right: 12px;
   }

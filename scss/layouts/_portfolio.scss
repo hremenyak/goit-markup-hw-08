@@ -1,5 +1,5 @@
 .cardset {
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -10,14 +10,14 @@
   position: relative;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @include mq(tablet-only) {
     display: flex;
     margin: 15px;
 
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     display: flex;
     margin: 15px;
 
@@ -39,7 +39,7 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     display: flex;
     flex-direction: column;
   }

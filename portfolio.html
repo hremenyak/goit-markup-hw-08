@@ -23,6 +23,42 @@
           <a href="./index.html" class="header__logo logo"
             >Web<span class="logo__black">Studio</span>
           </a>
+          <div class="navigation__wrapper">
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a href="./index.html" class="navigation-list__link">Студия</a>
+              </li>
+              <li class="navigation-list__item">
+                <a
+                  href="./portfolio.html"
+                  class="navigation-list__link navigation-list__link--current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation-list__item">
+                <a href="" class="navigation-list__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <button type="button" class="menu-button" data-menu-button>
             <svg
               width="40"
@@ -31,7 +67,7 @@
               aria-expanded="false"
             >
               <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
-              <use class="menu-button__icon-close" href="./images/icons.svg#menu-close"></use>
+              <use class="menu-button__icon-close" href="./images/icons.svg#close-menu"></use>
             </svg>
           </button>
           <div class="mobile-menu-container" data-menu>
@@ -81,41 +117,6 @@
               </li>
             </ul>
           </div>
-          <div class="navigation__wrapper">
-            <ul class="navigation-list">
-              <li class="navigation-list__item">
-                <a href="./index.html" class="navigation-list__link">Студия</a>
-              </li>
-              <li class="navigation-list__item">
-                <a
-                  href="./portfolio.html"
-                  class="navigation-list__link navigation-list__link--current"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="navigation-list__item">
-                <a href="" class="navigation-list__link">Контакты</a>
-              </li>
-            </ul>
-            <ul class="contacts">
-              <li class="contacts__item">
-                <a class="contacts__link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/icons.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link">
-                  <svg class="contacts__icon" width="10" height="16">
-                    <use href="./images/icons.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </div>
         </nav>
       </div>
     </header>
@@ -144,7 +145,21 @@
             <li class="cardset__item">
               <a class="cardset__link" href="">
                 <div class="portfolio-thumb">
-                  <img src="./images/portfolio/team.jpg" alt="вебсайт" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/team-mobile-450.jpg  450w,
+                      ./images/portfolio/team-mobile-900.jpg  900w,
+                      ./images/portfolio/team-tablet-354.jpg  354w,
+                      ./images/portfolio/team-tablet-708.jpg  708w,
+                      ./images/portfolio/team-desktop-370.jpg 370w,
+                      ./images/portfolio/team-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/team-mobile-450.jpg"
+                    alt="вебсайт"
+                    width="450"
+                    height="294"
+                  />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -164,9 +179,19 @@
               <a class="cardset__link" href="">
                 <div class="portfolio-thumb">
                   <img
-                    src="./images/portfolio/basketball.jpg"
+                    srcset="
+                      ./images/portfolio/basketball-mobile-450.jpg  450w,
+                      ./images/portfolio/basketball-mobile-900.jpg  900w,
+                      ./images/portfolio/basketball-tablet-354.jpg  354w,
+                      ./images/portfolio/basketball-tablet-708.jpg  708w,
+                      ./images/portfolio/basketball-desktop-370.jpg 370w,
+                      ./images/portfolio/basketball-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/basketball-mobile-450.jpg"
                     alt="постер гри у баскетбол"
-                    width="370"
+                    width="450"
+                    height="294"
                   />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
@@ -186,7 +211,21 @@
             <li class="cardset__item">
               <a class="cardset__link" href="">
                 <div class="portfolio-thumb">
-                  <img src="./images/portfolio/restaurant.jpg" alt="ресторан" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/restaurant-mobile-450.jpg  450w,
+                      ./images/portfolio/restaurant-mobile-900.jpg  900w,
+                      ./images/portfolio/restaurant-tablet-354.jpg  354w,
+                      ./images/portfolio/restaurant-tablet-708.jpg  708w,
+                      ./images/portfolio/restaurant-desktop-370.jpg 370w,
+                      ./images/portfolio/restaurant-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/restaurant-mobile-450.jpg"
+                    alt="ресторан"
+                    width="450"
+                    height="294"
+                  />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -204,7 +243,21 @@
             <li class="cardset__item">
               <a class="cardset__link" href="">
                 <div class="portfolio-thumb">
-                  <img src="./images/portfolio/earphones.jpg" alt="навушники" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/earphones-mobile-450.jpg  450w,
+                      ./images/portfolio/earphones-mobile-900.jpg  900w,
+                      ./images/portfolio/earphones-tablet-354.jpg  354w,
+                      ./images/portfolio/earphones-tablet-708.jpg  708w,
+                      ./images/portfolio/earphones-desktop-370.jpg 370w,
+                      ./images/portfolio/earphones-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/earphones-mobile-450.jpg"
+                    alt="навушники"
+                    width="450"
+                    height="294"
+                  />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -223,7 +276,21 @@
             <li class="cardset__item">
               <a class="cardset__link" href="">
                 <div class="portfolio-thumb">
-                  <img src="./images/portfolio/boxes.jpg" alt="дві коробки" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/boxes-mobile-450.jpg  450w,
+                      ./images/portfolio/boxes-mobile-900.jpg  900w,
+                      ./images/portfolio/boxes-tablet-354.jpg  354w,
+                      ./images/portfolio/boxes-tablet-708.jpg  708w,
+                      ./images/portfolio/boxes-desktop-370.jpg 370w,
+                      ./images/portfolio/boxes-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/boxes-mobile-450.jpg"
+                    alt="дві коробки"
+                    width="450"
+                    height="294"
+                  />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -241,7 +308,21 @@
             <li class="cardset__item">
               <a class="cardset__link" href="">
                 <div class="portfolio-thumb">
-                  <img src="./images/portfolio/monitor.jpg" alt="монітор" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/monitor-mobile-450.jpg  450w,
+                      ./images/portfolio/monitor-mobile-900.jpg  900w,
+                      ./images/portfolio/monitor-tablet-354.jpg  354w,
+                      ./images/portfolio/monitor-tablet-708.jpg  708w,
+                      ./images/portfolio/monitor-desktop-370.jpg 370w,
+                      ./images/portfolio/monitor-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/monitor-mobile-450.jpg"
+                    alt="монітор"
+                    width="450"
+                    height="294"
+                  />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -259,7 +340,21 @@
             <li class="cardset__item">
               <a class="cardset__link" href="">
                 <div class="portfolio-thumb">
-                  <img src="./images/portfolio/magazine.jpg" alt="журнал" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/magazine-mobile-450.jpg  450w,
+                      ./images/portfolio/magazine-mobile-900.jpg  900w,
+                      ./images/portfolio/magazine-tablet-354.jpg  354w,
+                      ./images/portfolio/magazine-tablet-708.jpg  708w,
+                      ./images/portfolio/magazine-desktop-370.jpg 370w,
+                      ./images/portfolio/magazine-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/magazine-mobile-450.jpg"
+                    alt="журнал"
+                    width="450"
+                    height="294"
+                  />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -278,7 +373,21 @@
             <li class="cardset__item">
               <a class="cardset__link" href=""
                 ><div class="portfolio-thumb">
-                  <img src="./images/portfolio/label.jpg" alt="лейбл" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/label-mobile-450.jpg  450w,
+                      ./images/portfolio/label-mobile-900.jpg  900w,
+                      ./images/portfolio/label-tablet-354.jpg  354w,
+                      ./images/portfolio/label-tablet-708.jpg  708w,
+                      ./images/portfolio/label-desktop-370.jpg 370w,
+                      ./images/portfolio/label-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/label-mobile-450.jpg"
+                    alt="лейбл"
+                    width="450"
+                    height="294"
+                  />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -296,7 +405,21 @@
             <li class="cardset__item">
               <a class="cardset__link" href="">
                 <div class="portfolio-thumb">
-                  <img src="./images/portfolio/laptop.jpg" alt="ноутбук" width="370" />
+                  <img
+                    srcset="
+                      ./images/portfolio/laptop-mobile-450.jpg  450w,
+                      ./images/portfolio/laptop-mobile-900.jpg  900w,
+                      ./images/portfolio/laptop-tablet-354.jpg  354w,
+                      ./images/portfolio/laptop-tablet-708.jpg  708w,
+                      ./images/portfolio/laptop-desktop-370.jpg 370w,
+                      ./images/portfolio/laptop-desktop-740.jpg 740w
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="./images/portfolio/laptop-mobile-450.jpg"
+                    alt="ноутбук"
+                    width="450"
+                    height="294"
+                  />
                   <div class="cardset__overlay">
                     <p class="cardset__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и

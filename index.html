@@ -25,6 +25,40 @@
           <a href="./index.html" class="header__logo logo"
             >Web<span class="logo__black">Studio</span>
           </a>
+          <div class="navigation__wrapper">
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a href="./index.html" class="navigation-list__link navigation-list__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation-list__item">
+                <a href="./portfolio.html" class="navigation-list__link">Портфолио</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="" class="navigation-list__link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <button type="button" class="menu-button" data-menu-button>
             <svg
               width="40"
@@ -33,7 +67,7 @@
               aria-expanded="false"
             >
               <use class="menu-button__icon-menu" href="./images/icons.svg#menu"></use>
-              <use class="menu-button__icon-close" href="./images/icons.svg#menu-close"></use>
+              <use class="menu-button__icon-close" href="./images/icons.svg#close-menu"></use>
             </svg>
           </button>
           <div class="mobile-menu-container" data-menu>
@@ -79,39 +113,6 @@
                   class="menu-socials__link menu-socials__link--plain"
                   href="https://www.linkedin.com/"
                   >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="navigation__wrapper">
-            <ul class="navigation-list">
-              <li class="navigation-list__item">
-                <a href="./index.html" class="navigation-list__link navigation-list__link--current"
-                  >Студия</a
-                >
-              </li>
-              <li class="navigation-list__item">
-                <a href="./portfolio.html" class="navigation-list__link">Портфолио</a>
-              </li>
-              <li class="navigation-list__item">
-                <a href="" class="navigation-list__link">Контакты</a>
-              </li>
-            </ul>
-            <ul class="contacts">
-              <li class="contacts__item">
-                <a class="contacts__link" href="mailto:info@devstudio.com">
-                  <svg class="contacts__icon" width="16" height="12">
-                    <use href="./images/icons.svg#envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__link">
-                  <svg class="contacts__icon" width="10" height="16">
-                    <use href="./images/icons.svg#smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
                 >
               </li>
             </ul>
@@ -190,15 +191,40 @@
           <h2 class="section__title section-title--none">Чем мы занимаемся</h2>
           <ul class="work">
             <li class="work__item">
-              <img src="./images/our-work/img(7).jpg" alt="ноутбук" width="370" />
+              <img
+                srcset="
+                  ./images/our-work/work-1-desktop.jpg   1x,
+                  ./images/our-work/work-1-desktop@2.jpg 2x
+                "
+                src="./images/our-work/work-1-desktop.jpg"
+                alt="ноутбук"
+                width="370"
+                height="294"
+              />
               <p class="work__text">Десктопные приложения</p>
             </li>
             <li class="work__item">
-              <img src="./images/our-work/img(1)(1).jpg" alt="телефон" width="370" />
+              <img
+                srcset="
+                  ./images/our-work/work-2-desktop.jpg   1x,
+                  ./images/our-work/work-2-desktop@2.jpg 2x
+                "
+                src="./images/our-work/work-2-desktop.jpg"
+                alt="телефон"
+                width="370"
+              />
               <p class="work__text">Мобильные приложения</p>
             </li>
             <li class="work__item">
-              <img src="./images/our-work/img(2)(1).jpg" alt="планшет" width="370" />
+              <img
+                srcset="
+                  ./images/our-work/work-3-desktop.jpg   1x,
+                  ./images/our-work/work-3-desktop@2.jpg 2x
+                "
+                src="./images/our-work/work-3-desktop.jpg"
+                alt="планшет"
+                width="370"
+              />
               <p class="work__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -213,9 +239,19 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/our-team/img(3)(1).jpg"
+                srcset="
+                  ./images/our-team/team-1-mobile-450.jpg  450w,
+                  ./images/our-team/team-1-mobile-900.jpg  900w,
+                  ./images/our-team/team-1-tablet-354.jpg  354w,
+                  ./images/our-team/team-1-tablet-708.jpg  708w,
+                  ./images/our-team/team-1-desktop-270.jpg 270w,
+                  ./images/our-team/team-1-desktop-540.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/our-team/team-1-mobile-450.jpg"
                 alt="чоловік з бородой в окулярах в коричневій рубашці"
-                width="270"
+                width="450"
+                height="460"
               />
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -255,9 +291,19 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/our-team/img(4)(1).jpg"
+                srcset="
+                  ./images/our-team/team-2-mobile-450.jpg  450w,
+                  ./images/our-team/team-2-mobile-900.jpg  900w,
+                  ./images/our-team/team-2-tablet-354.jpg  354w,
+                  ./images/our-team/team-2-tablet-708.jpg  708w,
+                  ./images/our-team/team-2-desktop-270.jpg 270w,
+                  ./images/our-team/team-2-desktop-540.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/our-team/team-2-mobile-450.jpg"
                 alt="жінка в окулярах"
-                width="270"
+                width="450"
+                height="460"
               />
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
@@ -298,9 +344,19 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/our-team/img(5)(1).jpg"
+                srcset="
+                  ./images/our-team/team-3-mobile-450.jpg  450w,
+                  ./images/our-team/team-3-mobile-900.jpg  900w,
+                  ./images/our-team/team-3-tablet-354.jpg  354w,
+                  ./images/our-team/team-3-tablet-708.jpg  708w,
+                  ./images/our-team/team-3-desktop-270.jpg 270w,
+                  ./images/our-team/team-3-desktop-540.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/our-team/team-3-mobile-450.jpg"
                 alt="чоловік у блакитній рубашці"
-                width="270"
+                width="450"
+                height="460"
               />
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
@@ -340,9 +396,19 @@
             <li class="team__item">
               <img
                 class="team__photo"
-                src="./images/our-team/img(6)(1).jpg"
+                srcset="
+                  ./images/our-team/team-4-mobile-450.jpg  450w,
+                  ./images/our-team/team-4-mobile-900.jpg  900w,
+                  ./images/our-team/team-4-tablet-354.jpg  354w,
+                  ./images/our-team/team-4-tablet-708.jpg  708w,
+                  ./images/our-team/team-4-desktop-270.jpg 270w,
+                  ./images/our-team/team-4-desktop-540.jpg 540w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/our-team/team-4-mobile-450.jpg"
                 alt="чоловік з бородой в окулярах в чорній футболці "
-                width="270"
+                width="450"
+                height="460"
               />
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
@@ -581,6 +647,6 @@
     </div>
     <script src="./modal.js"></script>
 
-    <script src="./mobile-menu.js"></script>
+    <script defer src="./mobile-menu.js"></script>
   </body>
 </html>

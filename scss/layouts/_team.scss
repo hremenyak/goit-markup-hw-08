@@ -1,5 +1,5 @@
 .team {
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -41,15 +41,15 @@
 }
 
 .team__item {
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @include mq(mobile-only) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @include mq(tablet-only) {
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     margin: 15px;
     flex-basis: calc((100% - 8 * 15px) / 4);
   }

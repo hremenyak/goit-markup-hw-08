@@ -1,20 +1,28 @@
 .filter {
   @extend %centeredFlex;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 
-  &__item {
-    @media screen and (max-width: 480px) {
-      margin-bottom: 15px;
-    }
-  }
-  &__item:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  @media screen and (max-width: 480px) {
+  @include mq(mobile-only) {
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-bottom: 25px;
+  }
+
+  @include mq(tablet-only) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    @include mq(mobile-only) {
+      margin-bottom: 15px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
   }
 }
 

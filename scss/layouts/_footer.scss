@@ -9,7 +9,7 @@
 }
 
 .footer-section__container {
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     display: flex;
     text-align: initial;
     align-items: baseline;
@@ -26,12 +26,12 @@
 }
 
 .footer-address-container {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @include mq(mobile-only) {
     flex-grow: 1;
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     margin-right: 70px;
   }
 }
@@ -66,14 +66,14 @@
 }
 
 .footer-section__wrapper {
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @include mq(tablet-only) {
     display: flex;
     margin-bottom: 60px;
     align-items: baseline;
     justify-content: space-around;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     display: flex;
     margin-right: 93px;
   }

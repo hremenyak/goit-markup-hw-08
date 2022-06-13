@@ -2,12 +2,12 @@
   @extend %centeredFlex;
   position: relative;
 
-  @media screen and (min-width: 678px) and (max-width: 1200px) {
+  @include mq(tablet-only) {
     padding-top: 21px;
     padding-bottom: 21px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -19,37 +19,25 @@
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-  @media screen and (min-width: 768px) {
-    justify-content: space-between;
-  }
-
-  @media screen and (min-width: 1200px) {
-    justify-content: flex-start;
-  }
 }
 .navigation__wrapper {
   display: none;
 }
 
 .navigation__wrapper {
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     display: flex;
     align-items: center;
   }
 }
 
 .navigation-list {
-  @media screen and (min-width: 768px) {
+  @include mq(tablet) {
     display: flex;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @include mq(tablet-only) {
     margin-right: 84px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-right: 0px;
   }
 }
 
@@ -99,32 +87,28 @@
 .contacts {
   @extend %centeredFlex;
 
-  margin-left: auto;
-
   &__icon {
     margin-right: 10px;
     fill: currentColor;
   }
 
-  @media screen and (max-width: 1200px) {
+  @include mq(tablet-only) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
-    flex-direction: row;
-    justify-content: center;
+  @include mq(desktop) {
     margin-left: 304px;
   }
 }
 
 .contacts__item:not(:last-child) {
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     margin-right: 30px;
   }
 
-  @media screen and (max-width: 1200px) {
+  @include mq(tablet-only) {
     margin-bottom: 10px;
   }
 }
@@ -141,12 +125,12 @@
     color: var(--accent-color);
   }
 
-  @media screen and (max-width: 1200px) {
+  @include mq(not-desktop) {
     font-size: 12px;
     line-height: 1.16;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     font-size: 14px;
     line-height: 1.14;
   }

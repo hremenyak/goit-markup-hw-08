@@ -9,7 +9,7 @@ body {
 }
 
 .section {
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @include mq(not-desktop) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -21,14 +21,18 @@ body {
   }
 
   &--hidden {
-    @media screen and (min-width: 480px) and (max-width: 1200px) {
+    @include mq(not-desktop) {
       display: none;
     }
-    padding-top: 0px;
+
+    @include mq(desktop) {
+      display: block;
+      padding-top: 0px;
+    }
   }
 
   &__title {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include mq(not-desktop) {
       font-size: 28px;
       line-height: 1.17;
     }

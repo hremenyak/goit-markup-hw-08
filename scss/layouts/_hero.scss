@@ -7,15 +7,42 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/hero.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+  @include mq(mobile-only) {
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/hero/hero-mobile.png);
+  }
+
+  @include mq(retina) {
+    background-image: url(../images/hero/hero-mobile@2.png),
+      linear-gradient(to right, #2f303a66, #2f303a66);
+  }
+
+  @include mq(tablet-only) {
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/hero/hero-tablet.png);
+  }
+
+  @include mq(retina) {
+    background-image: url(../images/hero/hero-tablet@2.png),
+      linear-gradient(to right, #2f303a66, #2f303a66);
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/hero/hero-desktop.png);
+  }
+
+  @include mq(retina) {
+    background-image: url(../images/hero/hero-desktop@2.png),
+      linear-gradient(to right, #2f303a66, #2f303a66);
+  }
+
   &__title {
-    @media screen and (min-width: 480px) and (max-width: 1199px) {
+    @include mq(not-desktop) {
       font-size: 26px;
       line-height: 1.61;
     }
