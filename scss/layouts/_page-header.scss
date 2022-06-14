@@ -1,7 +1,4 @@
 .page-header {
-  @extend %centeredFlex;
-  position: relative;
-
   @include mq(tablet-only) {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -11,6 +8,7 @@
     padding-top: 24px;
     padding-bottom: 25px;
   }
+  position: relative;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
