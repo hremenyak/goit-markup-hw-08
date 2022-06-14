@@ -14,15 +14,21 @@
   @include mq(desktop) {
     margin-bottom: 50px;
   }
+}
 
-  &__item {
+.filter__item {
+  @include mq(mobile-only) {
+    margin-bottom: 15px;
+  }
+
+  &:nth-last-child(-n + 2) {
     @include mq(mobile-only) {
-      margin-bottom: 15px;
+      margin-bottom: 0px;
     }
+  }
 
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
+  &:not(:last-child) {
+    margin-right: 8px;
   }
 }
 

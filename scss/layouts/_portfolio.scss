@@ -46,6 +46,17 @@
 }
 
 .cardset__overlay {
+  @include mq(mobile-only) {
+    padding: 77px 24px;
+  }
+
+  @include mq(tablet-only) {
+    padding: 49px 24px 77px;
+  }
+
+  @include mq(desktop) {
+    padding: 63px 24px;
+  }
   position: absolute;
   display: inline-block;
   top: 0;
@@ -64,12 +75,6 @@
   }
 }
 .cardset__description {
-  position: absolute;
-  display: inline-block;
-  width: 322px;
-  height: 162px;
-  top: 63px;
-  left: 24px;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
