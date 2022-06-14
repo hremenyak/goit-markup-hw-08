@@ -8,7 +8,7 @@
   color: rgba(33, 33, 33, 1);
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     line-height: 1.15;
     text-align: initial;
   }
@@ -66,14 +66,11 @@
 }
 
 .modal-form__policy {
-  @media screen and (min-width: 480px) {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 30px;
-  }
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     justify-content: center;
   }
 }
@@ -98,7 +95,7 @@
   font-size: 12px;
   line-height: 1.16;
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     font-size: 14px;
     line-height: 1.71;
   }

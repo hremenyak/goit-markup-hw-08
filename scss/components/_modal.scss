@@ -17,7 +17,7 @@
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
   }
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     width: 528px;
   }
 

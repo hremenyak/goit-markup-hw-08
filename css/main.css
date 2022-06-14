@@ -386,6 +386,7 @@ ul {
   .footer-form__input {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0px;
   }
 }
 
@@ -490,19 +491,14 @@ ul {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 480px) {
-  .modal-form__policy {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    margin-bottom: 30px;
-  }
+.modal-form__policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1389,6 +1385,9 @@ ul {
     display: -ms-flexbox;
     display: flex;
     margin-right: 93px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 

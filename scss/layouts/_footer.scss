@@ -76,5 +76,6 @@
   @include mq(desktop) {
     display: flex;
     margin-right: 93px;
+    flex-grow: 1;
   }
 }
