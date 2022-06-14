@@ -1,8 +1,13 @@
 .modal {
+  @include mq(mobile) {
+    width: 450px;
+  }
+  @include mq(desktop) {
+    width: 528px;
+  }
   position: absolute;
-
+  width: 96%;
   padding: 40px;
-  width: 450px;
 
   top: 50%;
   left: 50%;
@@ -16,9 +21,6 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
-  }
-  @include mq(desktop) {
-    width: 528px;
   }
 
   &-button {

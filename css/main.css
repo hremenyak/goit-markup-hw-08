@@ -239,8 +239,8 @@ ul {
 
 .modal {
   position: absolute;
+  width: 96%;
   padding: 40px;
-  width: 450px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
@@ -255,15 +255,21 @@ ul {
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.8);
-          transform: translate(-50%, -50%) scale(0.8);
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
   }
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
 }
 
 .modal-button {
