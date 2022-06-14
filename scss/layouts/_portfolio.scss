@@ -63,6 +63,7 @@
   opacity: 0;
   background-color: var(--accent-color);
   transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
+  overflow: scroll;
 
   .cardset__link:hover &,
   .cardset__link:focus & {
@@ -97,5 +98,4 @@
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
-  height: 100%;
 }
