@@ -47,10 +47,9 @@
       line-height: 1.61;
     }
     color: var(--primary-white-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
+
+    @include fonts(900, 44px, 1.4, 0.06em);
+
     margin-top: 0;
     margin-bottom: 30px;
   }
@@ -68,9 +67,7 @@
     background-color: var(--accent-color);
 
     cursor: pointer;
-    font-weight: var(--primary-fw-title);
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+
+    @include fonts(700, 16px, 1.9, 0.06em);
   }
 }

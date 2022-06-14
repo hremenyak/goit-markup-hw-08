@@ -28,10 +28,8 @@
 
 .cardset__title {
   color: var(--title-color);
-  font-weight: var(--primary-fw-title);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+
+  @include fonts(700, 18px, 2, 0.06em);
   margin-bottom: 4px;
 }
 

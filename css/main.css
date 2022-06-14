@@ -339,8 +339,8 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   cursor: pointer;
   -webkit-transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
@@ -629,7 +629,7 @@ ul {
 
 .button-text {
   margin-right: 10px;
-  font-weight: var(--primary-fw-title);
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -1035,7 +1035,7 @@ ul {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  font-weight: var(--primary-fw-title);
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -1140,7 +1140,7 @@ ul {
 
 .cardset__title {
   color: var(--title-color);
-  font-weight: var(--primary-fw-title);
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;

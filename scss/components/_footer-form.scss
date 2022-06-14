@@ -24,10 +24,7 @@
   color: var(--primary-white-color);
 
   &::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
+    @include fonts(400, 16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
 }

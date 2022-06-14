@@ -54,10 +54,9 @@
   list-style: none;
   color: var(--title-color);
   font-family: Roboto;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+
+  @include fonts(500, 14px, 1.2, 0.02em);
+
   transition: color 250ms var(--timing-function);
 
   &:hover,

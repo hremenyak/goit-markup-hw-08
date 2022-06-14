@@ -40,3 +40,19 @@
     }
   }
 }
+
+@mixin fonts($fw, $fz, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin transition($property) {
+  $duration: 250ms;
+  $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
