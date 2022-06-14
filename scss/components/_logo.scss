@@ -2,9 +2,7 @@
   color: var(--accent-color);
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
+  @include fonts(700, 24px, 1.16, null);
 
   &__black {
     color: var(--title-color);

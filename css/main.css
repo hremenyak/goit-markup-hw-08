@@ -74,7 +74,7 @@ body {
 .section__title {
   margin-bottom: 50px;
   color: var(--title-color);
-  font-weight: var(--primary-fw-title);
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -715,10 +715,10 @@ ul {
 }
 
 .menu-navigation__link {
-  font-size: 40px;
   font-weight: 500;
-  color: var(--title-color);
+  font-size: 40px;
   line-height: 1.17;
+  color: var(--title-color);
 }
 
 .menu-navigation__link:hover, .menu-navigation__link:focus {
@@ -1071,7 +1071,7 @@ ul {
   margin-bottom: 10px;
   color: var(--title-color);
   text-transform: uppercase;
-  font-weight: var(--primary-fw-title);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
