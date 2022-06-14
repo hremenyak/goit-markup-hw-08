@@ -289,7 +289,7 @@ ul {
 }
 
 .filter {
-  margin-bottom: 40px;
+  margin-bottom: -15px;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -317,12 +317,6 @@ ul {
 @media screen and (max-width: 767.98px) {
   .filter__item {
     margin-bottom: 15px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .filter__item:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
   }
 }
 
@@ -1390,6 +1384,10 @@ ul {
         -ms-flex-positive: 1;
             flex-grow: 1;
   }
+}
+
+.cardset {
+  margin-top: 40px;
 }
 
 @media screen and (min-width: 768px) {
