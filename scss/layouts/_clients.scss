@@ -1,12 +1,9 @@
 .clients {
   margin: -15px;
-
-  @media screen and (min-width: 480px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
   &__icon {
     fill: currentColor;
