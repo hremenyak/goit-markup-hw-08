@@ -8,21 +8,19 @@ body {
 }
 
 .section {
-  @include mq(not-desktop) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
-  padding-top: 94px;
-  padding-bottom: 94px;
 
   &--grey {
     background-color: var(--bgc-our-team);
   }
 
   &--hidden {
-    @include mq(not-desktop) {
-      display: none;
-    }
+    display: none;
 
     @include mq(desktop) {
       display: block;
@@ -31,15 +29,15 @@ body {
   }
 
   &__title {
-    @include mq(not-desktop) {
-      font-size: 28px;
-      line-height: 1.17;
-    }
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--title-color);
-
-    @include fonts(700, 36px, 1.16, null);
-
     text-align: center;
+    @include fonts(700, 28px, 1.17, null);
+
+    @include mq(desktop) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.16;
+    }
   }
 }

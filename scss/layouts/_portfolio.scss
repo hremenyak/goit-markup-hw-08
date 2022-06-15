@@ -9,7 +9,10 @@
 
 .cardset__item {
   position: relative;
-  margin-bottom: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   @include mq(tablet-only) {
     display: flex;

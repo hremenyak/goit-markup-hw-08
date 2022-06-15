@@ -43,14 +43,14 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -58,10 +58,8 @@ body {
   background-color: var(--bgc-our-team);
 }
 
-@media screen and (max-width: 1199.98px) {
-  .section--hidden {
-    display: none;
-  }
+.section--hidden {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -72,18 +70,19 @@ body {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
   .section__title {
-    font-size: 28px;
-    line-height: 1.17;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
@@ -160,7 +159,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .header__logo {
     margin-right: 88px;
   }
@@ -211,12 +210,6 @@ ul {
 .socials__link:hover .socials__icon,
 .socials__link:focus .socials__icon {
   fill: white;
-}
-
-@media screen and (max-width: 767.98px) {
-  .footer-socials {
-    margin-bottom: 60px;
-  }
 }
 
 .backdrop {
@@ -638,7 +631,7 @@ ul {
 
 .menu-button {
   position: absolute;
-  top: 10px;
+  top: -6px;
   right: 10px;
   border: none;
   background-color: transparent;
@@ -804,6 +797,10 @@ ul {
   }
 }
 
+.page-header__container {
+  position: relative;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -954,8 +951,8 @@ ul {
 .hero {
   background-color: var(--bgc-secondary);
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -989,6 +986,8 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(#2f303a66), to(#2f303a66)), url(../images/hero/hero-desktop.png);
     background-image: linear-gradient(to right, #2f303a66, #2f303a66), url(../images/hero/hero-desktop.png);
   }
@@ -1083,17 +1082,17 @@ ul {
       flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767.98px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .features__item {
     margin: 15px;
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .features__item {
-    margin-bottom: 30px;
   }
 }
 
@@ -1193,12 +1192,8 @@ ul {
   line-height: 1.2;
 }
 
-.team__item:last-child {
-  margin-right: 0px;
-}
-
 @media screen and (max-width: 767.98px) {
-  .team__item {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1361,6 +1356,10 @@ ul {
   color: var(--accent-color);
 }
 
+.footer-section__wrapper {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer-section__wrapper {
     display: -webkit-box;
@@ -1384,6 +1383,7 @@ ul {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    margin-bottom: 0px;
   }
 }
 
@@ -1404,6 +1404,9 @@ ul {
 
 .cardset__item {
   position: relative;
+}
+
+.cardset__item:not(:last-child) {
   margin-bottom: 30px;
 }
 

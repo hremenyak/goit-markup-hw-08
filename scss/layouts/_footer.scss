@@ -67,6 +67,7 @@
 }
 
 .footer-section__wrapper {
+  margin-bottom: 60px;
   @include mq(tablet-only) {
     display: flex;
     margin-bottom: 60px;
@@ -78,5 +79,6 @@
     display: flex;
     margin-right: 93px;
     flex-grow: 1;
+    margin-bottom: 0px;
   }
 }

@@ -12,18 +12,18 @@
     color: var(--primary-white-color);
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     font-size: 26px;
     line-height: 1.19;
   }
 }
 
 .header__logo {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @include mq(tablet-only) {
     margin-right: 88px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desktop) {
     margin-right: 93px;
   }
 }

@@ -35,14 +35,13 @@
   }
 }
 
-.team__item:last-child {
-  margin-right: 0px;
-}
-
 .team__item {
   @include mq(mobile-only) {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
+
   @include mq(tablet-only) {
     margin: 15px;
     flex-basis: calc((100% - 4 * 15px) / 2);

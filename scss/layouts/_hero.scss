@@ -1,8 +1,8 @@
 .hero {
   background-color: var(--bgc-secondary);
   text-align: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
 
   max-width: 1600px;
   margin-left: auto;
@@ -30,6 +30,8 @@
   }
 
   @include mq(desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, #2f303a66, #2f303a66),
       url(../images/hero/hero-desktop.png);
 
