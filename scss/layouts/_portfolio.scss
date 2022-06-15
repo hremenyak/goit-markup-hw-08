@@ -10,8 +10,10 @@
 .cardset__item {
   position: relative;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @include mq(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @include mq(tablet-only) {
