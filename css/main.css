@@ -1467,7 +1467,12 @@ ul {
   transition: opacity 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
-  overflow: scroll;
+}
+
+@media screen and (max-width: 479.8px) {
+  .cardset__overlay {
+    overflow: scroll;
+  }
 }
 
 @media screen and (max-width: 767.98px) {

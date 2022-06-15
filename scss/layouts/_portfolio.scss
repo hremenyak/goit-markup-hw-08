@@ -48,6 +48,9 @@
 }
 
 .cardset__overlay {
+  @media screen and (max-width: 479.8px) {
+    overflow: scroll;
+  }
   @include mq(mobile-only) {
     padding: 77px 24px;
   }
@@ -69,7 +72,6 @@
   opacity: 0;
   background-color: var(--accent-color);
   transition: opacity 250ms var(--timing-function), transform 250ms var(--timing-function);
-  overflow: scroll;
 
   .cardset__link:hover &,
   .cardset__link:focus & {
