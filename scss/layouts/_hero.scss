@@ -7,38 +7,36 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+
+  background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+    url(../images/hero/hero-mobile.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  @include mq(mobile-only) {
-    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
-      url(../images/hero/hero-mobile.png);
-  }
-
   @include mq(retina) {
-    background-image: url(../images/hero/hero-mobile@2.png),
-      linear-gradient(to right, #2f303a66, #2f303a66);
+    background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+      url(../images/hero/hero-mobile@2.png);
   }
 
   @include mq(tablet-only) {
     background-image: linear-gradient(to right, #2f303a66, #2f303a66),
       url(../images/hero/hero-tablet.png);
-  }
 
-  @include mq(retina) {
-    background-image: url(../images/hero/hero-tablet@2.png),
-      linear-gradient(to right, #2f303a66, #2f303a66);
+    @include mq(retina) {
+      background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+        url(../images/hero/hero-tablet@2.png);
+    }
   }
 
   @include mq(desktop) {
     background-image: linear-gradient(to right, #2f303a66, #2f303a66),
       url(../images/hero/hero-desktop.png);
-  }
 
-  @include mq(retina) {
-    background-image: url(../images/hero/hero-desktop@2.png),
-      linear-gradient(to right, #2f303a66, #2f303a66);
+    @include mq(retina) {
+      background-image: linear-gradient(to right, #2f303a66, #2f303a66),
+        url(../images/hero/hero-desktop@2.png);
+    }
   }
 
   &__title {
